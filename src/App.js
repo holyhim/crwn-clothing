@@ -19,7 +19,7 @@ function App() {
       setCurUser(user);
     });
 
-    return unsubscribeFromAuth();
+    return () => unsubscribeFromAuth();
   });
 
   return (
